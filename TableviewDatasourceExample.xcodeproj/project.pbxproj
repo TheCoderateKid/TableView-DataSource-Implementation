@@ -18,6 +18,7 @@
 		38E3CAAA25BF7DB300B1A514 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E3CAA925BF7DB300B1A514 /* DataSource.swift */; };
 		38E3CAB025BF802E00B1A514 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E3CAAE25BF802E00B1A514 /* TestTableViewCell.swift */; };
 		38E3CAB125BF802E00B1A514 /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38E3CAAF25BF802E00B1A514 /* TestTableViewCell.xib */; };
+		38E3CAB925BF8F6300B1A514 /* DataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E3CAB825BF8F6300B1A514 /* DataSourceDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		38E3CAA925BF7DB300B1A514 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		38E3CAAE25BF802E00B1A514 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
 		38E3CAAF25BF802E00B1A514 /* TestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
+		38E3CAB825BF8F6300B1A514 /* DataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				38E3CAA925BF7DB300B1A514 /* DataSource.swift */,
 				38E3CAAE25BF802E00B1A514 /* TestTableViewCell.swift */,
 				38E3CAAF25BF802E00B1A514 /* TestTableViewCell.xib */,
+				38E3CAB825BF8F6300B1A514 /* DataSourceDelegate.swift */,
 			);
 			path = TableviewDatasourceExample;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38E3CA7B25BF7CF100B1A514 /* ViewController.swift in Sources */,
+				38E3CAB925BF8F6300B1A514 /* DataSourceDelegate.swift in Sources */,
 				38E3CA7725BF7CF100B1A514 /* AppDelegate.swift in Sources */,
 				38E3CAAA25BF7DB300B1A514 /* DataSource.swift in Sources */,
 				38E3CA7925BF7CF100B1A514 /* SceneDelegate.swift in Sources */,

@@ -10,10 +10,16 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var dataSource: DataSource!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        dataSource.setup(items: ["hello", "goodbye", "whatever"])
+        dataSource.setup(items: ["hello", "goodbye", "whatever"], dataSourceDelegate: self)
     }
 }
 
+extension ViewController: DataSourceDelegate {
+    func didSelectCell(indexPath: IndexPath) {
+        print("Cell selected at row \(indexPath.row)")
+    }
+}

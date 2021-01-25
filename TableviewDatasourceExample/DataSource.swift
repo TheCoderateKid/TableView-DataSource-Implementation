@@ -12,8 +12,10 @@ class DataSource: NSObject {
     
     @IBOutlet weak var tableView: UITableView!
     var items:[String]?
+    var delegate: DataSourceDelegate?
     
-    func setup(items: [String]) {
+    func setup(items: [String], dataSourceDelegate: DataSourceDelegate) {
+        self.delegate = dataSourceDelegate
         self.tableView.register(UINib(nibName: "TestTableViewCell", bundle: nil), forCellReuseIdentifier: "TestTableViewCell")
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
@@ -24,7 +26,9 @@ class DataSource: NSObject {
 
 
 extension DataSource: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.delegate?.didSelectCell(indexPath: indexPath)
+    }
 }
 
 extension DataSource: UITableViewDataSource {
